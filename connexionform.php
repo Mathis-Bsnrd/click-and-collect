@@ -28,26 +28,15 @@ error_reporting(E_ALL);
 		
     </head>
     <body>
-                <h1>Création de compte</h1>
+                <h1>Connexion</h1>
 
  <form  method="post">
 
   <label for="email">Adresse électronique :</label></br>
-  <input class="formulaire" type="email" id="email" name="email" value="jeandupont@gmail.com"></br>
-  <label for="nom">Nom :</label></br>
-  <input class="formulaire"type="text" id="nom" name="nom" value="Dupont"></br>
-  <label for="prenom">Prénom :</label></br>
-  <input class="formulaire"type="text" id="prenom" name="prenom" value="Jean"></br>
-  <label for="mdp">Veuillez choisir un mot de passe :</label></br>
+  <input class="formulaire" type="email" id="email" name="email" value=""></br>
+  <label for="mdp">Mot de passe :</label></br>
   <input class="formulaire" type="password" id="mdp" name="mdp"></br>
-  <label for="adresse">Adresse :</label></br>
-  <input class="formulaire" type="text" id="adresse" name="adresse"> </br>
-    <label for="adresse">Code Postal :</label></br>
-  <input class="formulaire" type="text" id="cp" name="cp"></br>
-    <label for="adresse">Ville :</label></br>
-  <input class="formulaire" type="text" id="ville" name="ville"></br>
-  <button class="buttonform" type="button"> Confirmer l'inscription </button>
-  
+
 </form>
 
     </body>
