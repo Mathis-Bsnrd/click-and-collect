@@ -65,9 +65,9 @@
             }
         }
 
-        public function update_product($name){
-            $sql = "update produits set ?;";
-            $datas = [$name];
+        public function update_product($newname, $newprice, $oldname){
+            $sql = "update produits set nom = ?, prix = ? where nom = ?;";
+            $datas = [$newname, $newprice, $oldname];
             try{
             $result = $this->bdd->prepare($sql);
             $result->execute($datas);
