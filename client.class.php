@@ -7,7 +7,7 @@
 
         public function creation_compte($email, $nom, $prenom, $password, $adresse, $cp, $ville){
             $sql = "insert into client (email, nom, prenom, password, adresse, cp, ville) values (?,?,?,?,?,?,?);";
-            $datas = array($email, $nom, $prenom, $password, $adresse, $cp, $ville);
+            $datas = [$email, $nom, $prenom, $password, $adresse, $cp, $ville];
             try{
             $result = $this->bdd->prepare($sql);
             $result->execute($datas);

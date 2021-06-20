@@ -5,17 +5,17 @@ session_start();
 error_reporting(E_ALL);
 
 require 'connexion.php';
-require 'client.class.php';
+require 'admin.class.php';
 
-$email = isset($_POST['email']) ? $_POST['email'] : null;
+$id = isset($_POST['id']) ? $_POST['id'] : null;
 $password = isset($_POST['password']) ? $_POST['password'] : null;
 
-$client = new client($bdd);
+$admin = new admin($bdd);
 
 if(isset($_POST['connexion'])){
-  $customer = $client->connexion($email, $password);
-  if($customer){
-    $_SESSION['customer'] = $customer;
+  $admin = $admin->connexion($id, $password);
+  if($admin){
+    $_SESSION['admin'] = $admin;
   }
 }
 ?>
@@ -38,20 +38,16 @@ if(isset($_POST['connexion'])){
 
   <h1>Connexion</h1>
 
-  <form method="post">
-
-    <label for="email">Adresse électronique :</label></br>
-    <input class="formulaire" type="email" id="email" name="email" value=""></br>
+  <form action="produit_admin.php" method="post">
+    <label for="email">Identifiant :</label></br>
+    <input class="formulaire" type="text" id="id" name="id" value=""></br>
     <label for="mdp">Mot de passe :</label></br>
-    <input class="formulaire" type="password" id="mdp" name="mdp"></br>
+    <input class="formulaire" type="password" id="password" name="password" value=""></br>
     <input id="myButton" class="buttonform" type="submit" name="connexion" value="Connexion">
   </form>
   <br>
-
-  <button id="creation" class="buttonform" type="button"> Créer un compte </button>
-
-  <button><a href="connexion_admin.php">Connexion admin</a></button>
-
+  
+  <button><a href="connexion_admin.php">Connexion client</a></button>
 
 </body>
 

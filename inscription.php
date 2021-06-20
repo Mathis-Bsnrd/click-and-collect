@@ -25,7 +25,7 @@ $data = $client->creation_compte($email, $nom, $prenom, password_hash($password,
 <head>
   <title>Click and Collect</title>
   <meta charset="utf-8" />
-  <link rel="icon" href="/img/clc.jpg">
+  <link rel="icon" href="img/clc.jpg">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -39,19 +39,19 @@ $data = $client->creation_compte($email, $nom, $prenom, password_hash($password,
   <form method="post">
 
     <label for="email">Adresse électronique :</label></br>
-    <input class="formulaire" type="email" id="email" name="email" value="jeandupont@gmail.com"></br>
+    <input class="formulaire" type="email" id="email" name="email" value=""></br>
     <label for="nom">Nom :</label></br>
-    <input class="formulaire" type="text" id="nom" name="nom" value="Dupont"></br>
+    <input class="formulaire" type="text" id="nom" name="nom" value=""></br>
     <label for="prenom">Prénom :</label></br>
-    <input class="formulaire" type="text" id="prenom" name="prenom" value="Jean"></br>
-    <label for="mdp">Veuillez choisir un mot de passe :</label></br>
-    <input class="formulaire" type="password" id="mdp" name="mdp"></br>
+    <input class="formulaire" type="text" id="prenom" name="prenom" value=""></br>
+    <label for="password">Veuillez choisir un mot de passe :</label></br>
+    <input class="formulaire" type="password" id="password" name="password" value=""></br>
     <label for="adresse">Adresse :</label></br>
-    <input class="formulaire" type="text" id="adresse" name="adresse"> </br>
+    <input class="formulaire" type="text" id="adresse" name="adresse" value=""> </br>
     <label for="adresse">Code Postal :</label></br>
-    <input class="formulaire" type="text" id="cp" name="cp"></br>
+    <input class="formulaire" type="text" id="cp" name="cp" value=""></br>
     <label for="adresse">Ville :</label></br>
-    <input class="formulaire" type="text" id="ville" name="ville"></br>
+    <input class="formulaire" type="text" id="ville" name="ville" value=""></br>
     <input id="myButton" class="buttonform" type="submit" value="Confirmer l'inscription">
 
   </form>
