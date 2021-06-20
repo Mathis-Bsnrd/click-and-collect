@@ -77,5 +77,16 @@
                 echo "</pre>";
             }
         }
+
+        public function liste_client(){
+            $sql = "select * from client;";
+            try{
+            $result = $this->bdd->prepare($sql);
+            $result->execute();
+            }catch(Exception $e){
+                echo "<br><pre>Erreur dans la requête :" . $sql;
+                echo "</pre>";
+            }
+        }
     }
 ?>

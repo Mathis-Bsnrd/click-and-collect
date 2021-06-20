@@ -29,7 +29,7 @@ if(isset($_POST['connexion'])){
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/javascript.js"></script>
+  <script type="text/javascript" src="./js/connexion_admin.js"></script>
 
 </head>
 
@@ -47,7 +47,7 @@ if(isset($_POST['connexion'])){
   </form>
   <br>
   
-  <button><a href="connexion_admin.php">Connexion client</a></button>
+  <button id="connexion_client">Connexion client</button>
 
 </body>
 

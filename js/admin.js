@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    /*document.getElementById("connexion_client").onclick = function () {
+        location.href = "/click-and-collect/index.php";
+    };*/
+
+    document.getElementById("client").onclick = function () {
+        location.href = "/click-and-collect/client.php";
+    };
+
+    document.getElementById("produit").onclick = function () {
+        location.href = "/click-and-collect/produits.php";
+    };
+
+    document.getElementById("commande").onclick = function () {
+        location.href = "/click-and-collect/commande.php";
+    };
 
     $( "#ajouter" ).click( function() {
         $('#ajout_produit').toggle('show');

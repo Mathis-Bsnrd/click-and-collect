@@ -50,7 +50,7 @@ if(isset($_POST['connexion'])){
 
   <button id="creation" class="buttonform" type="button"> Créer un compte </button>
 
-  <button><a href="connexion_admin.php">Connexion admin</a></button>
+  <button id="admin">Connexion admin</button>
 
 
 </body>

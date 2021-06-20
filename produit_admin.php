@@ -5,25 +5,6 @@ session_start();
 error_reporting(E_ALL);
 
 require 'connexion.php';
-require 'admin.class.php';
-
-$produit = isset($_POST['produit']) ? $_POST['produit'] : null;
-$client = isset($_POST['client']) ? $_POST['client'] : null;
-$commande = isset($_POST['commande']) ? $_POST['commande'] : null;
-
-$admin = new admin($bdd);
-
-if (isset($_POST['produit'])) {
-  $result = $admin->show_produit();
-}
-
-if (isset($_POST['client'])) {
-  $result = $admin->show_client();
-}
-
-if (isset($_POST['commande'])) {
-  $result = $admin->show_commande();
-}
 
 ?>
 
@@ -43,11 +24,10 @@ if (isset($_POST['commande'])) {
 
 <body>
 
-  <form method='post'>
-    <input type="submit" id="produit" name="produit" value="produit">
-    <input type="submit" id="client" name="client" value="client">
-    <input type="submit" id="commande" name="commande" value="commande">
-  </form>
+  <button id="client">Client</button>
+  <button id="produit">Produit</button>
+  <button id="commande">Commande</button>
+
 
 </body>
 
